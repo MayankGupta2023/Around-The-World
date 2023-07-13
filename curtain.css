@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.curtain-effect{
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+
+    background: url("/Requires/Eiffel\ Tower2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.first-page{
+    position: sticky;
+    bottom: 0px;
+
+    display: flex;
+    
+    height: 100vh;
+    width: 100%;
+
+
+    background: url("/Requires/earth-in-space.jpg");
+
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    
+    color: white;
+
+    animation: slide-bg 500s linear infinite;
+}
+
+@keyframes slide-bg{
+from{
+    background-position: 0px;
+}
+to{
+    background-position: 3000px;
+}
+}
+
+
+.about-club{
+    flex-basis: 50%;
+    /* border: 2px solid white; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   padding: 0px 120px;
+   z-index: 1;
+}
+
+.atw{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.club{
+    font-size: 1.7rem;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.buttons button{
+
+    height: 35px;
+    width: 120px;
+    padding: 5px;
+    border-radius: 1rem;
+    background-color: rgb(197 141 77);
+    border: 2px solid rgb(210 164 113);
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    font-size: 1.08rem;
+    letter-spacing: 1.5px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.icons i{
+    font-size: 2rem;
+    margin-left: 10px;
+    color: antiquewhite;
+}
+
+.earth{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth img{
+    width: 100%;
+}
+
+
+.quarter-earth{
+    position: absolute;
+    bottom: 0px;
+
+
+    background-image: url("./Requires/earth-quarter.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 21vh;
+}
+
+.flat-earth{
+    position: absolute;
+    bottom: 0px;
+    
+
+    background-image: url("./Requires/flat-earth.jpg");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 13vh;
+
+    animation: slide-bg 1200s linear infinite;
+    width: 100%;
+    margin: 0px auto;
+
+    /* border: 2px solid green; */
+
+}
+
