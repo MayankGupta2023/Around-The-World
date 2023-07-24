@@ -4,37 +4,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
     
 }
 
-.curtain-effect{
-    height: 100vh;
-    width: 100%;
-    z-index: 3;
-    position: relative;
-
-    background: url("/Requires/Eiffel\ Tower2.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+html{
+    font-size: 90%;
+    scroll-behavior: smooth;
 }
+
 
 
 .first-page{
-    position: sticky;
-    bottom: 0px;
-
     display: flex;
-    
     height: 100vh;
     width: 100%;
-
-
-    background: url("/Requires/earth-in-space.jpg");
+    background: url("/Requires/space.webp");
 
     background-size: 100% 100%;
     background-repeat: repeat-x;
     
     color: white;
+    
 
     animation: slide-bg 500s linear infinite;
 
@@ -43,22 +35,22 @@
 
 @keyframes slide-bg{
 from{
-    background-position: 0px;
+    background-position: -800px;
 }
 to{
-    background-position: 3000px;
+    background-position: 3400px;
 }
 }
 
 
 .about-club{
-    flex-basis: 50%;
-    /* border: 2px solid white; */
+    flex-basis: 60%;
+
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-   padding: 0px 120px;
+   padding: 0px 6.5vw 4vh 6.5vw;
    z-index: 1;
 }
 
@@ -68,11 +60,13 @@ to{
 
 .atw{
     font-size: 3.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+
 }
 
 .club{
-    font-size: 1.7rem;
+    font-size: 1.35rem;    
+    
 }
 
 .buttons{
@@ -107,14 +101,16 @@ to{
 }
 
 .earth{
-    flex-basis: 50%;
+    flex-basis: 40%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+
     align-items: center;
+    padding-bottom: 80px;
 }
 
 .earth img{
-    width: 60%;
+    width: 70%;
     z-index: 1;
 
     animation:  floatimage 5s ease-in-out infinite;
@@ -130,7 +126,7 @@ to{
     }
 
     50%{
-        transform: translateY(-0.6rem);
+        transform: translateY(1rem);
 
     }
 
@@ -155,3 +151,123 @@ to{
 
 
 
+/* Events page start */
+
+.events{
+    height: 100vh;
+    background: black;
+    padding-top: 85px;
+    
+}
+
+#event-img{
+
+    position: absolute;
+    left: 25vw;
+
+    height: 100px;
+    width: 150px;
+
+    animation:  floatimage 5s ease-in-out infinite;
+
+}
+
+.heading{
+color: white;
+color: yellow;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 101px;
+
+font-size: 2.5rem;
+letter-spacing: 2px;
+}
+
+.event-main{
+    
+    height: auto;
+    padding: 20px 8px;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px 25px;
+    
+}
+
+.event-bar{
+    height: 29vh;
+    padding: 0px 40px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    border: 2px solid wheat;
+    
+    border-radius: 10rem;
+}
+
+.event-bar img{
+    height: 150px;
+    width: 150px;
+
+    border-radius: 1.5rem;
+}
+
+.event-info{
+    margin-left: 25px;
+}
+
+.event-name{
+    font-size: 1.8rem;
+    color: yellow;
+}
+
+.event-date{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: rgb(220, 239, 255);
+
+
+}
+
+.about-event{
+    /* display: none; */
+}
+
+.buttons-in-event{
+    display: flex;
+    justify-content: flex-end;
+    width: 90vw;
+}
+
+.buttons-in-event .button{
+    height: 40px;
+    width: 170px;
+
+    padding: 0px 10px;
+    border-radius: 1rem;
+    
+    color: yellow;
+    background-color: black;
+    border: 2px solid yellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 10px;
+    letter-spacing: 1px;
+
+   
+    
+    
+}
+
+.buttons-in-event .button i{
+    margin-left: 5px;
+}
