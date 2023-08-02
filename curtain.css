@@ -149,6 +149,90 @@ to{
     height: 21vh;
 }
 
+/* Meet the core starts */
+
+#core{
+    height: 100vh;
+    background-color: black;
+    padding-top: 80px;
+}
+
+.core-heading{
+    height: 80px;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.members{
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mem{
+  
+    height: 250px;
+    width: 20%;
+    border: 2px solid white;
+    margin: 10px 40px;
+
+    min-width: 280px;
+
+    background: url("https://images.unsplash.com/photo-1608754482805-6f630357358b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80");
+    animation: slide-bg 1000s linear infinite;
+
+    box-shadow: 5px 5px 5px white;
+
+}
+
+.mem-img{
+    height: 70%;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mem-img img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10rem;
+}
+
+.mem-info{
+    height: 30%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: yellow;
+    
+}
+
+
 
 
 /* Events page start */
@@ -235,9 +319,7 @@ letter-spacing: 2px;
 
 }
 
-.about-event{
-    /* display: none; */
-}
+
 
 .buttons-in-event{
     display: flex;
