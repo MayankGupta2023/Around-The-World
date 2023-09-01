@@ -87,6 +87,11 @@ to{
     letter-spacing: 1.5px;
 }
 
+.buttons button:hover,.buttons-in-event .button:hover{
+    cursor: pointer;
+    
+}
+
 .icons{
     display: flex;
     align-items: center;
@@ -361,6 +366,11 @@ letter-spacing: 2px;
 
 .buttons-in-event .button i{
     margin-left: 5px;
+}
+
+.buttons-in-event a {
+    
+    text-decoration: none;
 }
 
 
