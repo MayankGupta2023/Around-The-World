@@ -19,3 +19,10 @@ var TrandingSlider = new Swiper('.tranding-slider', {
       prevEl: '.swiper-button-prev',
     }
   });
+
+
+
+
+  const menu=document.getElementById("menu-icon");
+  
+  menu.addEventListener

@@ -42,6 +42,15 @@ nav a{
     gap: 1.2rem;
 }
 
+#menu-icon{
+    display: none;
+}
+
+#cross-icon{
+    display: none;
+
+}
+
 
 /* Media querries */
 
@@ -65,4 +74,44 @@ nav a{
     }
 
     
+}
+
+
+@media (max-width:600px){
+    nav{
+        flex-direction: column;
+        position: absolute;
+        right: 0.5px;
+        top: 80px;
+        background-color: black;
+        border: 2px solid white;
+    display: none;
+
+    }
+
+    nav a{
+        display: flex;
+        justify-content: start;
+        margin: 10px 0px;
+        border-bottom: 0.5px solid white;
+    }
+
+    #menu-icon{
+        display: block;
+        font-size: 2rem;
+    }
+
+    #cross-icon{
+        font-size: 2rem;
+
+    }
+
+    .club{
+        font-size:0.85rem ;
+    }
+
+    #image{
+        height: 60px;
+        width: 60px;
+    }
 }

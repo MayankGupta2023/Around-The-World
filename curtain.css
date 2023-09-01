@@ -558,13 +558,13 @@ letter-spacing: 2px;
    .logooo
 {
     
-    margin-top: 6%;
+   
     max-width: 40%;
 }
 #para
 {
 
-margin-top: 3%;
+
 font-weight: 800;
 font-size: 1.5rem;
 
@@ -646,20 +646,34 @@ font-size: 1.1rem;
     #left
    {
     flex-basis: 50%;
+    display: none;
   
    }
 
   
    #right
    {
-    flex-basis: 50%;
+    flex-basis: 100%;
     
    }
 
    .photos li img{
-    height: 55px;
-    width: 60px;
+    height: 65px;
+    width: 80px;
+
+    
    }
+
+ 
+}
+
+@media (max-width:400px){
+    .photos li img{
+        height: 50px;
+        width: 64px;
+    
+        
+       }
 }
   
 
@@ -720,4 +734,46 @@ font-size: 1.1rem;
         border-bottom-left-radius: 4rem;
         border-bottom-right-radius: 4rem ;
     }
+
+
+    .core-heading{
+        
+        font-size: 2rem;
+        
+        
+        
+    }
+
+    .heading{
+        font-size: 2.2rem;
+    }
+
+    .buttons-in-event .button{
+        padding: 0px 0px;
+        font-size: 1rem;
+    }
+
+    .buttons-in-event{
+        width: 100vw;
+    }
+
+    .earth{
+        display: none;
+    }
+
+    .about-club{
+        flex-basis: 100%;
+       
+    }
+
+    .atw{
+        font-size: 2.35rem;
+
+    }
+
+
+    .trek{
+        height: 105vh;
+    }
+    
 }
