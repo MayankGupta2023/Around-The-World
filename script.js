@@ -35,6 +35,6 @@ var TrandingSlider = new Swiper('.tranding-slider', {
 
 ScrollReveal().reveal('.atw', { origin: 'top' });
 ScrollReveal().reveal('.earth', { origin: 'right' });
-ScrollReveal().reveal('.buttons,.icons', { origin: 'bottom' });
+ScrollReveal().reveal('.buttons,.icons,.mem', { origin: 'bottom' });
 ScrollReveal().reveal('.club', { origin: 'left' });
 
