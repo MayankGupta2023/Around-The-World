@@ -25,4 +25,16 @@ var TrandingSlider = new Swiper('.tranding-slider', {
 
   const menu=document.getElementById("menu-icon");
   
-  menu.addEventListener
+  ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 100
+
+});
+
+ScrollReveal().reveal('.atw', { origin: 'top' });
+ScrollReveal().reveal('.earth', { origin: 'right' });
+ScrollReveal().reveal('.buttons,.icons', { origin: 'bottom' });
+ScrollReveal().reveal('.club', { origin: 'left' });
+
