@@ -787,3 +787,9 @@ font-size: 1.1rem;
     }
     
 }
+
+
+.fc-hide{
+    visibility: hidden;
+    z-index: -2;
+}
